@@ -20,11 +20,19 @@ namespace SalesWebMvc.Controllers
 
         public IActionResult Index()
         {
+
             return View();
         }
 
         public IActionResult Privacy()
         {
+            return View();
+        }
+
+        public IActionResult Sobre()
+        {
+            ViewData["Message"] = "Sales Web MVC App from C# Course";
+            ViewData["Site"] = "Curso realizado na plataforma Udemy: ";
             return View();
         }
 
